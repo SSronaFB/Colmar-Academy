@@ -1,0 +1,464 @@
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  position: relative;
+  top: 4rem;
+}
+
+.container {
+  padding: 2rem 1.5rem;
+  width: 100%;
+  display: flex;
+  margin: 0;
+}
+
+.container:before,
+.container:after {
+  content: none !important;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+.video-container video {
+  max-width: 100%;
+}
+
+h1, h2, h3, p, a, span {
+  color: #494949;
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.light-font {
+  color: #A9A9A9;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  background-color: white;
+}
+
+header .container {
+  height: 4rem;
+  padding: 0rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+header .logo span {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav li {
+  padding-left: 1rem;
+}
+
+header nav a {
+  font-size: 1rem;
+  color: #494949;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+}
+
+/* Sign Up Section */
+
+#sign-up-section {
+  background-color: #DCDCDC;
+}
+
+#sign-up-section .container {
+  align-items: center;
+}
+
+#sign-up-section .image-container {
+  width: 60%;
+}
+
+#sign-up-section .content {
+  padding-right: 1.5rem;
+  padding-left: 3rem;
+  width: auto;
+  max-width: 35%;
+}
+
+#sign-up-section .content h1 {
+  line-height: 1.2;
+  padding-bottom: 1rem;
+}
+
+#sign-up-section .content h3 {
+  line-height: 1.4;
+  padding-bottom: 1rem;
+}
+
+#sign-up-section .content .btn {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem 0rem;
+  background-color: #696969;
+  color: #F5F5F5;
+  font-size: 1rem;
+}
+
+#sign-up-section .content .btn:hover {
+  background-color: #494949;
+}
+
+@media only screen and (max-width: 760px) {
+  #sign-up-section .container {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+
+  #sign-up-section .image-container {
+    width: 100%;
+  }
+
+  #sign-up-section .content {
+    padding: 2rem 1rem;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+/* main&sub section styles */
+
+.section-title {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.main-section {
+  width: 60%;
+  padding-top: 2rem;
+  padding-right: 1.5rem;
+}
+
+.main-section .content {
+  padding-top: 2rem;
+}
+
+.main-section .content h2 {
+  padding-bottom: 1.5rem;
+}
+
+.main-section .content h3 {
+  padding-bottom: 0.5rem;
+}
+
+.main-section .content .quote {
+  padding-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.main-section .content .quote-citation {
+  font-size: 0.75rem;
+}
+
+.sub {
+  width: 40%;
+  padding-top: 1rem;
+  border-left: solid 1px #DCDCDC;
+}
+
+.sub_item {
+  padding: 1rem;
+  border-bottom: solid 1px #DCDCDC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sub_item .image-container {
+  width: 35%;
+  height: auto;
+}
+
+.sub_item .content {
+  width: 65%;
+  padding-left: 1rem;
+  line-height: 1.4;
+}
+
+.sub_item h3 {
+  padding-bottom: 0.5rem;
+}
+
+.sub_item p {
+  padding-bottom: 0.5rem;
+}
+
+.sub_item a {
+  color: #0000ff
+}
+
+
+/* School Info Section */
+
+#school-info-section .container {
+  padding: 0rem 0rem 2rem 1.5rem;
+}
+
+.sub_item-info .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .main-info {
+    display: none;
+  }
+
+  #school-info-section .container {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .sub-info {
+    width: auto;
+    padding-top: 1rem;
+    border-left: none;
+  }
+
+  .sub_item-info {
+    width: auto;
+    padding: 1rem 1rem;
+    border-bottom: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sub_item-info .desktop {
+    display: none;
+  }
+
+  .sub_item-info .mobile {
+    display: block;
+  }
+
+  .sub_item-info .image-container {
+    width: 100%;
+  }
+
+  .sub_item-info .content {
+    width: auto;
+    padding: 1rem;
+    line-height: 1.4;
+  }
+
+}
+
+/* Course Section */
+
+#course-section {
+  background-color: #DCDCDC;
+}
+
+#course-section .container {
+  align-items: center;
+  justify-content: center;
+}
+
+.courses.desktop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 4.5rem;
+}
+
+.course {
+  width: 30%;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.course .image-container {
+  height: auto;
+}
+
+.course .content {
+  padding: 1rem 1rem 1.5rem 1rem;
+  line-height: 1.4;
+}
+
+.course p {
+  padding: 0.5rem 0;
+}
+
+#course-section .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  #course-section {
+    background-color: #ffffff;
+  }
+
+  #course-section .desktop {
+    display: none;
+  }
+
+  #course-section .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  #course-section .mobile ul {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 0;
+  }
+
+  #course-section .mobile li {
+    display: block;
+    width: auto;
+  }
+
+  #course-section .mobile a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #DCDCDC;
+    width: auto;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  #course-section .mobile .btn {
+    text-align: left;
+  }
+
+  #course-section .btn:hover {
+    background-color: #797979;
+  }
+}
+
+/* Thesis Exhibit Section */
+
+@media only screen and (max-width: 760px) {
+  #thesis-exhibit-section .desktop {
+    display: none;
+  }
+
+  #thesis-exhibit-section .container {
+    padding: 2rem 0;
+  }
+
+  .main-thesis {
+    width: auto;
+    padding: 0;
+  }
+}
+
+/* Footer Section */
+
+footer {
+  position: relative;
+  top: 2rem;
+  border-top: 1px solid #DCDCDC;
+}
+
+footer .container {
+  justify-content: space-between;
+}
+
+footer span {
+  font-size: 0.75rem;
+}
+
+footer a {
+  font-size: 0.75rem;
+}
+
+footer nav ul {
+  display: flex;
+}
+
+footer nav li {
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 760px) {
+  footer .desktop {
+    display: none;
+  }
+}
